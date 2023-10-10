@@ -1,0 +1,29 @@
+def text_prompt(msg):
+  try:
+    return raw_input(msg)
+  except NameError:
+    return input(msg)
+
+
+num1 = float(text_prompt('>Enter your first number - n1 : '))
+print('>Type the shortcut for your mathematical operation: Multiply is X, Subtract n1')
+print('from n2 (2-1) is S1, Subtract n2 from n1 (1-2) is S2, Exponent is E, and Divide')
+print('input1/input2) is D.')
+op = text_prompt('>Type operation shortcut - see above: ')
+num2 = float(text_prompt('>Enter your second number - n2: '))
+def operate():
+ if op.upper() == 'X': 
+  return (num1 * num2)
+ elif op.upper() == 'S1':
+   return (num2 - num1)
+ elif op.upper() == 'S2':
+  return (num1 - num2)
+ elif op.upper() == 'E':
+   return (num1 ** num2)
+ elif op.upper() == 'D':
+   return (num1 / num2)
+print(Calculation result: 'operate)
+
+
+
+  
